@@ -77,6 +77,6 @@ NewDataset = aggregate(MergedDataset[ , 1:66], by = list(MergedDataset$Subject, 
 names(NewDataset)[names(NewDataset) == 'Group.1'] = 'Subject'
 names(NewDataset)[names(NewDataset) == 'Group.2'] = 'Activity'
 
-
+write.table(NewDataset, "New_Tidy_Dataset.txt", row.names=FALSE)
 
 
